@@ -24,10 +24,11 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Compendium Home <span class="sr-only">(current)</span></a></li>
-					<li><a href="#">Home</a></li>
+					<li><a href="index.html">Compendium Home <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#">Home</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#newcard">+New Card</a>
 					<li><a href="#">Sign Out</a>
 				</ul>
 			</div>
@@ -63,6 +64,10 @@
 								<a href="#"><h4>Compendium</h4></a>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="row">
 						<div class="col-md-3 cards">
 							<div class="text">Writing</div>
 							<hr />
@@ -84,6 +89,39 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div class="modal fade" id="newcard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">+New Card</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+	            		<div class="form-group">
+	            			<label for="title">Card Title*</label>
+			                <input type="text" id="title" class="form-control" />
+			            </div>
+			            <div class="form-group">
+	            			<label for="subcat">Sub Catagory 1*</label>
+			                <input type="text" id="subcat" class="form-control" />
+			            </div>
+			            <div class="form-group">
+			            	<label for="subcat">Sub Category 2</label>
+			            	<input type="text" id="subcat" class="form-control" />
+			            </div>
+			          	<div class="form-group">
+							<button type="button" class="btn btn-success">Add to Cards</button>
+			          	</div>
+
+		         	</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
